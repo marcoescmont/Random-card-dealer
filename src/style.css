@@ -24,15 +24,7 @@ body {
   margin-left: 47%;
 }
 
-.cards {
-  display: flex;
-}
-
-.card,
-.card2,
-.card3,
-.card4,
-.card5 {
+.card {
   background-color: white;
   border-radius: 20px;
   height: 400px;
