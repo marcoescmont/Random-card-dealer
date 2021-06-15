@@ -24,7 +24,15 @@ body {
   margin-left: 47%;
 }
 
-.card {
+.cards {
+  display: flex;
+}
+
+.card,
+.card2,
+.card3,
+.card4,
+.card5 {
   background-color: white;
   border-radius: 20px;
   height: 400px;
@@ -34,7 +42,15 @@ body {
   margin-top: 30px;
 }
 
-.number {
+.numberR {
+  color: red;
+  margin: 9% 0% 0% 30%;
+  font-size: 200px;
+  position: absolute;
+}
+
+.numberB {
+  color: black;
   margin: 9% 0% 0% 30%;
   font-size: 200px;
   position: absolute;
