@@ -5,7 +5,7 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
+window.onload = function setTheSet() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  Math.floor(Math.random() * 4);
 };

@@ -1,1 +1,105 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+}
+
+.cardGenerator {
+  border-radius: 5px;
+  background-color: rgb(75, 75, 75);
+  color: white;
+  margin-left: 47%;
+}
+
+.cardGenerator:hover {
+  border-radius: 5px;
+  background-color: rgb(119, 119, 119);
+  color: white;
+  margin-left: 47%;
+}
+
+.cardGenerator:active {
+  border-radius: 5px;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  margin-left: 47%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  height: 400px;
+  width: 290px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.number {
+  margin: 9% 0% 0% 30%;
+  font-size: 200px;
+  position: absolute;
+}
+
+.heart {
+  color: red;
+  font-size: 59px;
+  margin-left: 18px;
+  margin-top: -10px;
+  position: absolute;
+}
+
+.heart2 {
+  color: red;
+  font-size: 59px;
+  margin-top: 110%;
+  margin-left: 81%;
+  position: absolute;
+}
+
+.diamond {
+  color: red;
+  font-size: 59px;
+  margin-left: 18px;
+  margin-top: -10px;
+  position: absolute;
+}
+
+.diamond2 {
+  color: red;
+  font-size: 59px;
+  margin-top: 110%;
+  margin-left: 81%;
+  position: absolute;
+}
+
+.spade {
+  color: black;
+  font-size: 59px;
+  margin-left: 18px;
+  margin-top: -10px;
+  position: absolute;
+}
+
+.spade2 {
+  color: black;
+  font-size: 59px;
+  margin-top: 110%;
+  margin-left: 81%;
+  position: absolute;
+}
+
+.club {
+  color: black;
+  font-size: 59px;
+  margin-left: 18px;
+  margin-top: -10px;
+  position: absolute;
+}
+
+.club2 {
+  color: black;
+  font-size: 59px;
+  margin-top: 110%;
+  margin-left: 81%;
+  position: absolute;
+}
