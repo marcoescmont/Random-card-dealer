@@ -7,24 +7,21 @@ body {
   border-radius: 5px;
   background-color: rgb(75, 75, 75);
   color: white;
-  margin-left: 47%;
-  display: flex;
-  justify-content: right;
-  align-items: right;
+  width: 100%;
 }
 
 .cardGenerator:hover {
   border-radius: 5px;
   background-color: rgb(119, 119, 119);
   color: white;
-  margin-left: 47%;
+  width: 100%;
 }
 
 .cardGenerator:active {
   border-radius: 5px;
   background-color: rgb(44, 44, 44);
   color: white;
-  margin-left: 47%;
+  width: 100%;
 }
 
 .card {
@@ -64,63 +61,63 @@ body {
 .heart {
   color: red;
   font-size: 350%;
-  margin-left: 6%;
-  margin-top: -6%;
+  top: -20px;
+  left: 10px;
   position: absolute;
 }
 
 .heart2 {
   color: red;
   font-size: 350%;
-  margin-top: 110%;
-  margin-left: 81%;
+  bottom: -15px;
+  right: 10px;
   position: absolute;
 }
 
 .diamond {
   color: red;
   font-size: 350%;
-  margin-left: 6%;
-  margin-top: -6%;
+  top: -20px;
+  left: 10px;
   position: absolute;
 }
 
 .diamond2 {
   color: red;
   font-size: 350%;
-  margin-top: 110%;
-  margin-left: 81%;
+  bottom: -15px;
+  right: 10px;
   position: absolute;
 }
 
 .spade {
   color: black;
   font-size: 350%;
-  margin-left: 6%;
-  margin-top: -6%;
+  top: -20px;
+  left: 10px;
   position: absolute;
 }
 
 .spade2 {
   color: black;
   font-size: 350%;
-  margin-top: 110%;
-  margin-left: 81%;
+  bottom: -15px;
+  right: 10px;
   position: absolute;
 }
 
 .club {
   color: black;
   font-size: 350%;
-  margin-left: 6%;
-  margin-top: -6%;
+  top: -20px;
+  left: 10px;
   position: absolute;
 }
 
 .club2 {
   color: black;
   font-size: 350%;
-  margin-top: 110%;
-  margin-left: 81%;
+  bottom: -15px;
+  right: 10px;
   position: absolute;
 }
