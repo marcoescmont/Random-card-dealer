@@ -2,26 +2,27 @@
 body {
   background-color: green;
 }
-
+.cardGenerator1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .cardGenerator {
   border-radius: 5px;
   background-color: rgb(75, 75, 75);
   color: white;
-  width: 100%;
 }
 
 .cardGenerator:hover {
   border-radius: 5px;
   background-color: rgb(119, 119, 119);
   color: white;
-  width: 100%;
 }
 
 .cardGenerator:active {
   border-radius: 5px;
   background-color: rgb(44, 44, 44);
   color: white;
-  width: 100%;
 }
 
 .card {
