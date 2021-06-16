@@ -18,7 +18,7 @@
         class="cardGenerator"
         type="button"
         value="Generate Card"
-        onclick="window.location.reload(false)"
+        onclick="removeCard()"
       />
     </div>
 
@@ -38,6 +38,10 @@
     function cardHeight(val) {
       let card = document.querySelector(".card");
       card.style.height = `${val}px`;
+    }
+    function removeCard() {
+      let element = document.querySelector(".fullCard");
+      return element.parentNode.removeChild(element);
     }
   </script>
 </html>
