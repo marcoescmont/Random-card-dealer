@@ -13,9 +13,29 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <button class="cardGenerator" type="button">
+    <button
+      class="cardGenerator"
+      onclick="window.location.reload(false)"
+      type="button"
+    >
       Generate Card
     </button>
+    <div style="display: flex; margin-left: 40.5%">
+      <input placeholder="Width" oninput="cardWidth(value)" /><input
+        placeholder="Height"
+        oninput="cardHeight(value)"
+      />
+    </div>
     <div class="card"></div>
   </body>
+  <script>
+    function cardWidth(val) {
+      let card = document.querySelector(".card");
+      card.style.width = `${val}px`;
+    }
+    function cardHeight(val) {
+      let card = document.querySelector(".card");
+      card.style.height = `${val}px`;
+    }
+  </script>
 </html>
