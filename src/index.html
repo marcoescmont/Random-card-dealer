@@ -14,12 +14,7 @@
   </head>
   <body>
     <div class="cardGenerator1">
-      <input
-        class="cardGenerator"
-        type="button"
-        value="Generate Card"
-        onclick="removeCard()"
-      />
+      <input class="cardGenerator" type="button" value="Generate Card" />
     </div>
 
     <div style="display: flex; justify-content:center; align-items:center">
@@ -28,7 +23,9 @@
         oninput="cardHeight(value)"
       />
     </div>
-    <div class="card"></div>
+    <div style="display: flex">
+      <div class="card"></div>
+    </div>
   </body>
   <script>
     function cardWidth(val) {
@@ -38,10 +35,6 @@
     function cardHeight(val) {
       let card = document.querySelector(".card");
       card.style.height = `${val}px`;
-    }
-    function removeCard() {
-      let element = document.querySelector(".fullCard");
-      return element.parentNode.removeChild(element);
     }
   </script>
 </html>

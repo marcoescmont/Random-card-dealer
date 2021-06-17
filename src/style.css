@@ -25,7 +25,11 @@ body {
   color: white;
 }
 
-.card {
+.card,
+.card2,
+.card3,
+.card4,
+.card5 {
   background-color: white;
   border-radius: 20px;
   height: 400px;
