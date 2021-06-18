@@ -23,34 +23,40 @@ window.onload = function generateCard() {
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
     } else if (randomNumberSet === 2) {
       return (document
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="spade">♠</t><n class="numberB">${randomNumber()}</n><t class="spade2">♠</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="spade">♠</t><n class="numberB">${randomNumber()}</n><t class="spade2">♠</t></div>`);
     } else if (randomNumberSet === 3) {
       return (document
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="diamond">♦</t><n class="numberR">${randomNumber()}</n><t class="diamond2">♦</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="diamond">♦</t><n class="numberR">${randomNumber()}</n><t class="diamond2">♦</t></div>`);
     } else if (randomNumberSet === 4)
       return (document
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="club">♣</t><n class="numberB">${randomNumber()}</n><t class="club2">♣</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="club">♣</t><n class="numberB">${randomNumber()}</n><t class="club2">♣</t></div>`);
     else
       return (document
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
   }
 
-  return fillerSelector(".card");
+  return (
+    fillerSelector(".newcard"),
+    fillerSelector(".newcard"),
+    fillerSelector(".newcard"),
+    fillerSelector(".newcard"),
+    fillerSelector(".newcard")
+  );
 };
 
 //create card by button//
@@ -77,40 +83,47 @@ document.querySelector(".cardGenerator").onclick = function() {
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
     } else if (randomNumberSet === 2) {
       return (document
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="spade">♠</t><n class="numberB">${randomNumber()}</n><t class="spade2">♠</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="spade">♠</t><n class="numberB">${randomNumber()}</n><t class="spade2">♠</t></div>`);
     } else if (randomNumberSet === 3) {
       return (document
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="diamond">♦</t><n class="numberR">${randomNumber()}</n><t class="diamond2">♦</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="diamond">♦</t><n class="numberR">${randomNumber()}</n><t class="diamond2">♦</t></div>`);
     } else if (randomNumberSet === 4)
       return (document
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="club">♣</t><n class="numberB">${randomNumber()}</n><t class="club2">♣</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="club">♣</t><n class="numberB">${randomNumber()}</n><t class="club2">♣</t></div>`);
     else
       return (document
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
   }
 
-  return removeCard(".fullCard"), fillerSelector(".card");
+  return (
+    removeCard(".card"),
+    fillerSelector(".newcard"),
+    fillerSelector(".newcard"),
+    fillerSelector(".newcard"),
+    fillerSelector(".newcard"),
+    fillerSelector(".newcard")
+  );
 };
 
 //refresh a new card after 10s//
 
 setInterval(function() {
-  let element = document.querySelector(".fullCard");
+  let element = document.querySelector(".card");
   return element.parentNode.removeChild(element);
 }, 9999);
 
@@ -131,32 +144,38 @@ setInterval(function() {
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
     } else if (randomNumberSet === 2) {
       return (document
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="spade">♠</t><n class="numberB">${randomNumber()}</n><t class="spade2">♠</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="spade">♠</t><n class="numberB">${randomNumber()}</n><t class="spade2">♠</t></div>`);
     } else if (randomNumberSet === 3) {
       return (document
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="diamond">♦</t><n class="numberR">${randomNumber()}</n><t class="diamond2">♦</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="diamond">♦</t><n class="numberR">${randomNumber()}</n><t class="diamond2">♦</t></div>`);
     } else if (randomNumberSet === 4)
       return (document
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="club">♣</t><n class="numberB">${randomNumber()}</n><t class="club2">♣</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="club">♣</t><n class="numberB">${randomNumber()}</n><t class="club2">♣</t></div>`);
     else
       return (document
         .querySelector(value)
         .appendChild(
           document.createElement("div")
-        ).innerHTML = `<div class="fullCard"><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
+        ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
   }
 
-  return fillerSelector(".card");
+  return (
+    fillerSelector(".newcard"),
+    fillerSelector(".newcard"),
+    fillerSelector(".newcard"),
+    fillerSelector(".newcard"),
+    fillerSelector(".newcard")
+  );
 }, 10000);
