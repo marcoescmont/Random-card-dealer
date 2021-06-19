@@ -16,7 +16,7 @@ window.onload = function generateCard() {
     else if (randomNumber === 0) return "A";
     else return randomNumber;
   }
-  function fillerSelector(value) {
+  function cardFiller(value) {
     let randomNumberSet = Math.floor(Math.random() * 4 + 1);
     if (randomNumberSet === 1) {
       return (document
@@ -51,17 +51,17 @@ window.onload = function generateCard() {
   }
 
   return (
-    fillerSelector(".newcard"),
-    fillerSelector(".newcard"),
-    fillerSelector(".newcard"),
-    fillerSelector(".newcard"),
-    fillerSelector(".newcard")
+    cardFiller(".newcard"),
+    cardFiller(".newcard"),
+    cardFiller(".newcard"),
+    cardFiller(".newcard"),
+    cardFiller(".newcard")
   );
 };
 
 //create card by button//
 
-document.querySelector(".cardGenerator").onclick = function() {
+document.querySelector(".cardGeneratorButton").onclick = function() {
   function removeCard(value) {
     let element = document.querySelector(value);
     return element.parentNode.removeChild(element);
@@ -76,7 +76,7 @@ document.querySelector(".cardGenerator").onclick = function() {
     else if (randomNumber === 0) return "A";
     else return randomNumber;
   }
-  function fillerSelector(value) {
+  function cardFiller(value) {
     let randomNumberSet = Math.floor(Math.random() * 4 + 1);
     if (randomNumberSet === 1) {
       return (document
@@ -112,11 +112,11 @@ document.querySelector(".cardGenerator").onclick = function() {
 
   return (
     removeCard(".card"),
-    fillerSelector(".newcard"),
-    fillerSelector(".newcard"),
-    fillerSelector(".newcard"),
-    fillerSelector(".newcard"),
-    fillerSelector(".newcard")
+    cardFiller(".newcard"),
+    cardFiller(".newcard"),
+    cardFiller(".newcard"),
+    cardFiller(".newcard"),
+    cardFiller(".newcard")
   );
 };
 
@@ -137,7 +137,7 @@ setInterval(function() {
     else if (randomNumber === 0) return "A";
     else return randomNumber;
   }
-  function fillerSelector(value) {
+  function cardFiller(value) {
     let randomNumberSet = Math.floor(Math.random() * 4 + 1);
     if (randomNumberSet === 1) {
       return (document
@@ -172,10 +172,10 @@ setInterval(function() {
   }
 
   return (
-    fillerSelector(".newcard"),
-    fillerSelector(".newcard"),
-    fillerSelector(".newcard"),
-    fillerSelector(".newcard"),
-    fillerSelector(".newcard")
+    cardFiller(".newcard"),
+    cardFiller(".newcard"),
+    cardFiller(".newcard"),
+    cardFiller(".newcard"),
+    cardFiller(".newcard")
   );
 }, 10000);
