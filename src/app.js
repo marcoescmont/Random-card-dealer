@@ -50,13 +50,7 @@ window.onload = function generateCard() {
         ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
   }
 
-  return (
-    cardFiller(".newcard"),
-    cardFiller(".newcard"),
-    cardFiller(".newcard"),
-    cardFiller(".newcard"),
-    cardFiller(".newcard")
-  );
+  return cardFiller(".newcard");
 };
 
 //create card by button//
@@ -110,14 +104,7 @@ document.querySelector(".cardGeneratorButton").onclick = function() {
         ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
   }
 
-  return (
-    removeCard(".card"),
-    cardFiller(".newcard"),
-    cardFiller(".newcard"),
-    cardFiller(".newcard"),
-    cardFiller(".newcard"),
-    cardFiller(".newcard")
-  );
+  return removeCard(".card"), cardFiller(".newcard");
 };
 
 //refresh a new card after 10s//
@@ -171,11 +158,5 @@ setInterval(function() {
         ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
   }
 
-  return (
-    cardFiller(".newcard"),
-    cardFiller(".newcard"),
-    cardFiller(".newcard"),
-    cardFiller(".newcard"),
-    cardFiller(".newcard")
-  );
+  return cardFiller(".newcard");
 }, 10000);
