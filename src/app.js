@@ -8,7 +8,7 @@ import "./assets/img/4geeks.ico";
 window.onload = function generateCard() {
   //write your code here
   function randomNumber() {
-    const randomNumber = Math.floor(Math.random() * 13 + 1);
+    const randomNumber = Math.floor(Math.random() * 13);
     if (randomNumber === 11) return "J";
     else if (randomNumber === 12) return "Q";
     else if (randomNumber === 13) return "K";
@@ -20,7 +20,7 @@ window.onload = function generateCard() {
     let index = document
       .querySelector(value)
       .appendChild(document.createElement("div"));
-    let randomNumberSet = Math.floor(Math.random() * 4 + 1);
+    let randomNumberSet = Math.floor(Math.random() * 4);
     if (randomNumberSet === 1) {
       return (index.innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
     } else if (randomNumberSet === 2) {
@@ -45,7 +45,7 @@ document.querySelector(".cardGeneratorButton").onclick = function() {
   }
 
   function randomNumber() {
-    const randomNumber = Math.floor(Math.random() * 13 + 1);
+    const randomNumber = Math.floor(Math.random() * 13);
     if (randomNumber === 11) return "J";
     else if (randomNumber === 12) return "Q";
     else if (randomNumber === 13) return "K";
@@ -57,7 +57,7 @@ document.querySelector(".cardGeneratorButton").onclick = function() {
     let index = document
       .querySelector(value)
       .appendChild(document.createElement("div"));
-    let randomNumberSet = Math.floor(Math.random() * 4 + 1);
+    let randomNumberSet = Math.floor(Math.random() * 4);
     if (randomNumberSet === 1) {
       return (index.innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
     } else if (randomNumberSet === 2) {
@@ -82,7 +82,7 @@ setInterval(function() {
 
 setInterval(function() {
   function randomNumber() {
-    const randomNumber = Math.floor(Math.random() * 13 + 1);
+    const randomNumber = Math.floor(Math.random() * 13);
     if (randomNumber === 11) return "J";
     else if (randomNumber === 12) return "Q";
     else if (randomNumber === 13) return "K";
@@ -94,7 +94,7 @@ setInterval(function() {
     let index = document
       .querySelector(value)
       .appendChild(document.createElement("div"));
-    let randomNumberSet = Math.floor(Math.random() * 4 + 1);
+    let randomNumberSet = Math.floor(Math.random() * 4);
     if (randomNumberSet === 1) {
       return (index.innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
     } else if (randomNumberSet === 2) {
