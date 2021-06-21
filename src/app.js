@@ -78,7 +78,7 @@ document.querySelector(".cardGeneratorButton").onclick = function() {
 setInterval(function() {
   let element = document.querySelector(".card");
   return element.parentNode.removeChild(element);
-}, 9999);
+}, 10000);
 
 setInterval(function() {
   function randomNumber() {
