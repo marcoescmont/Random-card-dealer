@@ -17,37 +17,20 @@ window.onload = function generateCard() {
     else return randomNumber;
   }
   function cardFiller(value) {
+    let index = document
+      .querySelector(value)
+      .appendChild(document.createElement("div"));
     let randomNumberSet = Math.floor(Math.random() * 4 + 1);
     if (randomNumberSet === 1) {
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
     } else if (randomNumberSet === 2) {
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="spade">♠</t><n class="numberB">${randomNumber()}</n><t class="spade2">♠</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="spade">♠</t><n class="numberB">${randomNumber()}</n><t class="spade2">♠</t></div>`);
     } else if (randomNumberSet === 3) {
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="diamond">♦</t><n class="numberR">${randomNumber()}</n><t class="diamond2">♦</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="diamond">♦</t><n class="numberR">${randomNumber()}</n><t class="diamond2">♦</t></div>`);
     } else if (randomNumberSet === 4)
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="club">♣</t><n class="numberB">${randomNumber()}</n><t class="club2">♣</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="club">♣</t><n class="numberB">${randomNumber()}</n><t class="club2">♣</t></div>`);
     else
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
   }
 
   return cardFiller(".newcard");
@@ -71,37 +54,20 @@ document.querySelector(".cardGeneratorButton").onclick = function() {
     else return randomNumber;
   }
   function cardFiller(value) {
+    let index = document
+      .querySelector(value)
+      .appendChild(document.createElement("div"));
     let randomNumberSet = Math.floor(Math.random() * 4 + 1);
     if (randomNumberSet === 1) {
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
     } else if (randomNumberSet === 2) {
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="spade">♠</t><n class="numberB">${randomNumber()}</n><t class="spade2">♠</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="spade">♠</t><n class="numberB">${randomNumber()}</n><t class="spade2">♠</t></div>`);
     } else if (randomNumberSet === 3) {
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="diamond">♦</t><n class="numberR">${randomNumber()}</n><t class="diamond2">♦</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="diamond">♦</t><n class="numberR">${randomNumber()}</n><t class="diamond2">♦</t></div>`);
     } else if (randomNumberSet === 4)
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="club">♣</t><n class="numberB">${randomNumber()}</n><t class="club2">♣</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="club">♣</t><n class="numberB">${randomNumber()}</n><t class="club2">♣</t></div>`);
     else
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
   }
 
   return removeCard(".card"), cardFiller(".newcard");
@@ -125,37 +91,20 @@ setInterval(function() {
     else return randomNumber;
   }
   function cardFiller(value) {
+    let index = document
+      .querySelector(value)
+      .appendChild(document.createElement("div"));
     let randomNumberSet = Math.floor(Math.random() * 4 + 1);
     if (randomNumberSet === 1) {
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
     } else if (randomNumberSet === 2) {
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="spade">♠</t><n class="numberB">${randomNumber()}</n><t class="spade2">♠</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="spade">♠</t><n class="numberB">${randomNumber()}</n><t class="spade2">♠</t></div>`);
     } else if (randomNumberSet === 3) {
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="diamond">♦</t><n class="numberR">${randomNumber()}</n><t class="diamond2">♦</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="diamond">♦</t><n class="numberR">${randomNumber()}</n><t class="diamond2">♦</t></div>`);
     } else if (randomNumberSet === 4)
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="club">♣</t><n class="numberB">${randomNumber()}</n><t class="club2">♣</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="club">♣</t><n class="numberB">${randomNumber()}</n><t class="club2">♣</t></div>`);
     else
-      return (document
-        .querySelector(value)
-        .appendChild(
-          document.createElement("div")
-        ).innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
+      return (index.innerHTML = `<div class="card" ><t class="heart">♥</t><n class="numberR">${randomNumber()}</n><t class="heart2">♥</t></div>`);
   }
 
   return cardFiller(".newcard");
