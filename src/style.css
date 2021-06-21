@@ -82,6 +82,7 @@ body {
   bottom: -15px;
   right: 10px;
   position: absolute;
+  transform: rotate(180deg);
 }
 
 .diamond {
@@ -98,6 +99,7 @@ body {
   bottom: -15px;
   right: 10px;
   position: absolute;
+  transform: rotate(180deg);
 }
 
 .spade {
@@ -114,6 +116,7 @@ body {
   bottom: -15px;
   right: 10px;
   position: absolute;
+  transform: rotate(180deg);
 }
 
 .club {
@@ -130,4 +133,5 @@ body {
   bottom: -15px;
   right: 10px;
   position: absolute;
+  transform: rotate(180deg);
 }
